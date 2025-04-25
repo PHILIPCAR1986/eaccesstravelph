@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Available Airlines - eAccess Travel</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background: #f5f5f5;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        h1, h2 {
+            text-align: center;
+            color: #ff8c00;
+        }
+
+        .airlines-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 30px;
+            padding: 20px;
+        }
+
+        .airline-card {
+            background: white;
+            border-radius: 12px;
+            padding: 20px;
+            text-align: center;
+            box-shadow: 0 4px 15px rgba(255, 140, 0, 0.2);
+            transition: all 0.3s ease;
+        }
+
+        .airline-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 25px rgba(255, 140, 0, 0.3);
+        }
+
+        .airline-logo {
+            width: 150px;
+            height: 80px;
+            object-fit: contain;
+            margin-bottom: 15px;
+        }
+
+        .airline-name {
+            font-weight: bold;
+            color: #333;
+            margin: 10px 0;
+        }
+
+        .section-title {
+            color: #ff8c00;
+            font-size: 2em;
+            text-align: center;
+            margin: 40px 0;
+            position: relative;
+        }
+
+        .section-title:after {
+            content: '';
+            display: block;
+            width: 60px;
+            height: 3px;
+            background: #ff8c00;
+            margin: 10px auto;
+        }
+
+        .many-more {
+            background: linear-gradient(135deg, #ffa500 0%, #ff8c00 100%);
+            color: white;
+        }
+
+        .many-more .airline-name {
+            color: white;
+            font-size: 1.2em;
+        }
+
+        .many-more i {
+            font-size: 2.5em;
+            color: white;
+            margin: 10px 0;
+        }
+
+        .many-more:hover {
+            background: linear-gradient(135deg, #ff8c00 0%, #ff7000 100%);
+        }
+    </style>
+
+    <!-- Add Font Awesome in the head section -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Available Airlines</h1>
+        
+        <!-- Local Airlines -->
+        <h2 class="section-title">Local Airlines</h2>
+        <div class="airlines-grid">
+            <div class="airline-card">
+                <img src="Philippine_Airlines_alternative_logo.png" alt="Philippine Airlines" class="airline-logo">
+                <div class="airline-name">Philippine Airlines</div>
+            </div>
+            
+            <div class="airline-card">
+                <img src="images.jpg" alt="Cebu Pacific" class="airline-logo">
+                <div class="airline-name">Cebu Pacific</div>
+            </div>
+            
+            <div class="airline-card">
+                <img src="AirAsia_Logo.svg.png" alt="AirAsia Philippines" class="airline-logo">
+                <div class="airline-name">AirAsia Philippines</div>
+            </div>
+
+            <div class="airline-card">
+                <img src="Sunlight_Air_PH_Logo.png" alt="Sunlight Airlines" class="airline-logo">
+                <div class="airline-name">Sunlight Airlines</div>
+            </div>
+
+            <div class="airline-card">
+                <img src="AirSWIFT_Logo_with_Slogan.png" alt="Air Swift" class="airline-logo">
+                <div class="airline-name">Air Swift</div>
+            </div>
+
+            <div class="airline-card many-more">
+                <i class="fas fa-plus-circle"></i>
+                <div class="airline-name">And Many More...</div>
+            </div>
+        </div>
+
+        <!-- International Airlines -->
+        <h2 class="section-title">International Airlines</h2>
+        <div class="airlines-grid">
+            <div class="airline-card">
+                <img src="Singapore-Airlines-Logo.png" alt="Singapore Airlines" class="airline-logo">
+                <div class="airline-name">Singapore Airlines</div>
+            </div>
+            
+            <div class="airline-card">
+                <img src="Emirates-Logo.png" alt="Emirates" class="airline-logo">
+                <div class="airline-name">Emirates</div>
+            </div>
+            
+            <div class="airline-card">
+                <img src="Korean-Air-Logo.png" alt="Korean Air" class="airline-logo">
+                <div class="airline-name">Korean Air</div>
+            </div>
+            
+            <div class="airline-card">
+                <img src="Qatar_Airways_logo.svg.png" alt="Qatar Airways" class="airline-logo">
+                <div class="airline-name">Qatar Airways</div>
+            </div>
+            
+            <div class="airline-card">
+                <img src="Cathay_Pacific-Logo.wine.png" alt="Cathay Pacific" class="airline-logo">
+                <div class="airline-name">Cathay Pacific</div>
+            </div>
+            
+            <div class="airline-card">
+                <img src="japan_airlines-logo_brandlogos.net_ss9qm.png" alt="Japan Airlines" class="airline-logo">
+                <div class="airline-name">Japan Airlines</div>
+            </div>
+
+            <div class="airline-card">
+                <img src="Thai_Airways-Logo.wine.png" alt="Thai Airways" class="airline-logo">
+                <div class="airline-name">Thai Airways</div>
+            </div>
+
+            <div class="airline-card">
+                <img src="malaysia-airlines-logo-png_seeklogo-87685.png" alt="Malaysia Airlines" class="airline-logo">
+                <div class="airline-name">Malaysia Airlines</div>
+            </div>
+
+            <div class="airline-card">
+                <img src="All_Nippon_Airways_Logo.svg.png" alt="All Nippon Airways" class="airline-logo">
+                <div class="airline-name">All Nippon Airways</div>
+            </div>
+
+            <div class="airline-card">
+                <img src="etihad-airways-vector-logo.png" alt="Etihad Airways" class="airline-logo">
+                <div class="airline-name">Etihad Airways</div>
+            </div>
+
+            <div class="airline-card">
+                <img src="Turkish_Airlines_logo.png" alt="Turkish Airlines" class="airline-logo">
+                <div class="airline-name">Turkish Airlines</div>
+            </div>
+
+            <div class="airline-card">
+                <img src="Lufthansa-Emblem.png" alt="Lufthansa" class="airline-logo">
+                <div class="airline-name">Lufthansa</div>
+            </div>
+
+            <div class="airline-card many-more">
+                <i class="fas fa-plus-circle"></i>
+                <div class="airline-name">And Many More...</div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
